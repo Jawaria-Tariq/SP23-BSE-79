@@ -1,0 +1,33 @@
+<section class="container py-5">
+    <h1 class="mb-4">Admin Panel - Orders</h1>
+  
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col">Order ID</th>
+          <th scope="col">Customer Name</th>
+          <th scope="col">Total Bill</th>
+          <th scope="col">Payment Method</th>
+          <th scope="col">Order Status</th>
+          <th scope="col">Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% orders.forEach(order => { %>
+          <tr>
+            <td><%= order._id %></td>
+            <td><%= order.user.username %></td>
+            <td>Rs. <%= order.totalBill %></td>
+            <td><%= order.paymentMethod === 'cash_on_delivery' ? 'Cash on Delivery' : 'Online Payment' %></td>
+            <td><%= order.status %></td>
+            <td>
+              <!-- Link to view order details -->
+              <a href="/admin/order/<%= order._id %>" class="btn btn-info btn-sm">View</a>
+              <!-- Option to update order status -->
+            </td>
+          </tr>
+        <% }) %>
+      </tbody>
+    </table>
+  </section>
+  
