@@ -1,0 +1,6 @@
+Programming in C++ and Data Structures & Algorithms (DSA)
+Project Highlights:
+
+Core Programming Concepts: This project focuses on applying C++ for a deep understanding of data structures such as linked lists, stacks, queues, trees, and graphs.
+Algorithmic Proficiency: Implemented key algorithms for sorting, searching, and graph traversal to improve efficiency and handle complex data manipulations.
+Problem-Solving Skills: Demonstrated the ability to optimize code for performance, writing efficient algorithms to solve complex problems, an essential skill for scalable applications.

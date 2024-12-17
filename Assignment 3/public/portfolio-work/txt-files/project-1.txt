@@ -1,0 +1,7 @@
+School Management System (Java, JavaFX, OOP, File Handling)
+Project Highlights:
+
+Comprehensive Features: This system enables effective management of students, staff, courses, and attendance. It includes modules for tracking grades, scheduling, and notifications, making it a full-scale tool for school administrators.
+Object-Oriented Design: Built with OOP principles, the system demonstrates encapsulation, inheritance, and polymorphism, providing a well-organized and scalable codebase.
+File Handling: Implemented efficient file handling to store and retrieve student and staff records, ensuring data integrity and fast access without the need for a database.
+Intuitive GUI: Developed using JavaFX, the interface is user-friendly and visually engaging, allowing easy navigation for non-technical users.

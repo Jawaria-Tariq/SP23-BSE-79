@@ -1,0 +1,7 @@
+Uniworth Website (Front-end & Back-end Development)
+Project Highlights:
+
+Responsive Design: Developed a fully responsive front end with Bootstrap and CSS to ensure compatibility across all devices, reflecting Uniworth’s brand elegance.
+Dynamic Back-end Integration: Implemented the back end using Node.js, enabling seamless user interaction with features like product browsing, cart management, and checkout.
+User-Centric UI/UX: Built with a focus on user experience, the design reflects Uniworth’s modern and refined aesthetic while making navigation simple and intuitive.
+Real-World Application: This project not only showcases full-stack development skills but also demonstrates the ability to translate a brand's identity into an effective online presence.
