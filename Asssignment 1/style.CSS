@@ -1,0 +1,713 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium';
+}
+
+.notification-bar{
+    Color: #212529;
+    background-color: #ECEFF2;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-numbers, .account, .sliding-line span{
+    color: #101010;
+    font-size: 18px;
+
+}
+
+.row{
+    height: 40px;
+    width: 96%;
+    display: flex;
+}
+
+.contact-numbers a{
+    text-decoration: none;
+    color: #101010;
+}
+
+.whatsapp-icon {
+    font-size: 20px; 
+}
+
+.contact-numbers{
+    display: flex;
+    height: 40px;
+    width: 500px;
+    justify-content: first baseline;
+    align-items: center;
+    gap: 15px;
+    
+}
+
+.sliding-line{
+    height: 40px;
+    width: 750px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; 
+}
+
+.sliding-line span{
+    animation: sliding 20s linear infinite; 
+}
+
+@keyframes sliding {
+    0%{
+        transform: translateX(750px);
+    }
+    100% {
+        transform: translateX(-750px); 
+      }
+    
+}
+.account{
+    height: 40px;
+    width: 500px;
+    display: flex;
+    justify-content:end;
+    align-items: center;
+    gap: 5px;
+
+}
+
+
+
+.outer-div {
+    height: 860px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.outer-div img {
+    width: 100%;
+
+}
+
+.main-header {
+    position: absolute;
+    width: 96%; 
+    height: 150px; 
+    color: white; 
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+
+.menu{
+    width: 650px;
+    font-size: 18px;
+    display: flex;
+    align-items: end;
+    gap: 10px;
+}
+
+.menu-icon{
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.logo{
+    width: 750px;
+    height: 110px;
+}
+
+.logo img{
+    width: 300px;
+    height: 120px;
+    object-fit: contain;
+}
+
+.cart{
+    display: flex;
+    gap: 45px;
+    list-style: none;
+}
+
+li{
+    display: flex;
+    gap: 10px;
+}
+
+.cart span{
+    font-size: 20px;
+}
+
+.cart img {
+    height: 25px;
+    width: 25px;
+}
+
+.cart-icon{
+    font-size: 25px;
+}
+
+
+/*Section*/
+
+.container-section{
+    height: 1500px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.container-div{
+    height: auto;
+    width: 92%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#box{
+    width: 517.5px;
+    height: 750px;
+    position: relative;
+    overflow: hidden; 
+}
+
+#box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease; 
+}
+
+.Heading-div{
+    position: absolute;
+    bottom: 100px; 
+    width: 100%; 
+    color: white;
+    font-size: 22px;
+    text-align: center;
+    margin-left: 16%;
+}
+
+#Heading-img{
+    text-decoration: none;
+    border: 2px solid white;
+    height: 50px;
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+#heading-2{
+    margin-right: 35%;
+    margin-top: 20px; 
+
+}
+
+#box img:hover {
+    transform: scale(1.05); 
+}
+
+/*Section B*/
+
+.Heading-section-B{
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#title-B{
+    font-size: 45px;
+    position: relative;
+    text-decoration:none;
+}
+
+#title-B::after {
+    content: "";
+    position: absolute; 
+    bottom: -15px; 
+    left: 50%;
+    transform: translateX(-50%); 
+    width: 30%; 
+    height: 5px; 
+    background-color: red; 
+}
+
+
+.section-B {
+    height: 650px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.container-B {
+    height: 650px;
+    width: 92%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.boxes-B {
+    width: 370px;
+    height: 600px;
+    position: relative;
+}
+
+.boxes {
+    width: 100%;
+    height: 560px;
+    position: absolute;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+.boxes img.first-image {
+    height: 530px;
+    width: 370px;
+    object-fit: cover;
+}
+
+.boxes img.second-image {
+    position: absolute;
+    left: -100%;
+    height: 530px; 
+    width: 370px;
+    object-fit: cover;
+    opacity: 0.5;
+    transition: transform 0.3s ease-in;
+}
+
+.boxes:hover img.second-image {
+    opacity: 1;
+    transform: translateX(100%);
+}
+
+.boxes h6 {
+    margin-left: 10px;
+    color: #101010;
+    font-size: 18px;
+}
+
+.Price-1{
+    font-size: 20px;
+    color: black;
+    position: absolute; 
+    bottom: 20px; 
+    margin-left: 10px;
+
+}
+
+.Cutted-sale {
+    font-size: 15px;
+    margin-left: 10px;
+    color: #AAAAAA;
+    text-decoration: line-through;
+    position: absolute; 
+    bottom: 0px; 
+}
+
+/*Middle Section*/
+
+.Middle-Section{
+    width: 100%;
+    height: 600px;
+    background-color: black;
+}
+
+.mid-div{
+    height: 600px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.mid-div img{
+   width: 100%;
+}
+
+.mid-lines{
+    position: absolute;
+    width: 25%; 
+    height: 200px; 
+    color: white; 
+    text-align: center;
+    color: #101010;
+}
+
+#mid-head{
+    margin-left: -40px;
+    font-size: 30px;
+}
+#mid-para{
+    padding-top: 25px;
+    padding-bottom: 50px;
+}
+
+#mid-button{
+    border: 2px solid black;
+    height: 50px;
+    width: 200px;
+    font-size: 30px;
+    background: none;
+}
+
+/*Browse More Section*/
+
+.Shirts-section{
+  
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    padding-top: 50px;
+}
+
+#Products{
+    color: red;
+    font-size: 20px;
+}
+
+#Browse{
+    margin-top: 15px;
+    font-size: 35px;
+    position: relative;
+}
+
+#Browse::after{
+    content: "";
+    position: absolute; 
+    bottom: -10px; 
+    left: 50%;
+    transform: translateX(-50%); 
+    width: 4%; 
+    height: 5px; 
+    background-color: red; 
+}
+
+#Browse-list{
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    font-size: 20px;
+
+}
+
+#Shirt{
+    color: red;
+    text-decoration: none;
+}
+
+#Accessories, #Summer{
+    text-decoration: none;
+    color: black;
+}
+
+.section-Shirts{
+    height: 1500px;
+    display: flex;
+    justify-content: center;
+}
+
+.div-shirts{
+    width: 92%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+}
+
+/*1st Shirt*/
+
+.shirt-1{
+    width: 500px;
+    height: 710px;
+    position: relative;
+}
+
+#Navy-Stripe {
+    width: 100%;
+    height: 680px;
+    position: absolute; 
+    overflow: hidden;
+    text-decoration: none;
+}
+
+#shirts-Name{
+    font-size: 18px;
+    color: rgb(46, 45, 45);
+    margin-left: 10px;
+}
+
+#Price{
+    font-size: 20px;
+    color: black;
+    position: absolute; 
+    bottom: 10px; 
+    margin-left: 10px;
+}
+
+#Navy-Stripe img.first-image {
+    height: 650px;
+    width: 500px;
+    object-fit: cover;
+}
+
+#Navy-Stripe img.second-image {
+    position: absolute;
+    left: -100%; 
+    height: 650px;
+    width: 500px;
+    object-fit: cover;
+    opacity: 0.5;
+    transition: transform 0.3s ease-in; 
+
+}
+
+#Navy-Stripe:hover img.second-image {
+    opacity: 1;
+    transform: translateX(100%); 
+
+}
+
+/*Icon Section*/
+
+.section-out{
+    height: 210px;
+}
+
+.icon-section{
+    height: 190px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.icon-out-div{
+    height: 80px;
+    width: 560px;
+    display: flex;
+    justify-content: center;
+    border-right: 2px solid rgb(173, 172, 172);
+}
+
+.no-border{
+    border: none;
+}
+
+.free-shipping-div{
+    display: flex;
+
+}
+#img-icon-heading{
+    margin-top: 25px;
+    margin-left: 15px;
+    font-size: 25px;
+    transition: 0.5s ease-in;
+}
+
+#img-icon-heading:hover{
+    color: red;
+}
+
+.container-section-icon{
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/*Know*/
+
+.Know{
+    background-color: #ededed;
+    margin-top: 15px;
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Know-div{
+    width: 96%;
+    height: 160px;
+    display: flex;
+    justify-content: first baseline;
+    align-items: center;
+}
+
+.Know-section-div{
+
+    height: auto;
+    width: 800px;
+}
+
+#Know-Heading{
+    font-size: 22px;
+}
+
+#para-know{
+    font-size: 18px;
+}
+
+.form{
+    height: auto;
+    width: 840px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+form{
+    background-color: #101010;
+}
+
+.form input{
+    height: 40px;
+    width: 350px;
+    font-size: 15px;
+}
+
+.form button{
+    height: 40px;
+    width: 120px;
+    background-color: black;
+    color: white;
+    border: none;
+    font-size: 20px;
+}
+
+/*Footer*/
+footer.footer-class {
+    background-color: #000; 
+    color: #fff; 
+    padding: 20px 0;
+    text-align: center;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+footer.footer-class .copywrite {
+    padding-left: 20px;
+    text-align: left; 
+}
+
+footer.footer-class .visa {
+    display: flex;
+    text-align: right; 
+    padding-right: 20px;
+}
+
+footer.footer-class .visa img {
+    max-width: 200px; 
+    margin-left: 10px; 
+}
+
+footer.footer-class p {
+    margin-top: 5px;
+    font-size: 15px;
+}
+
+/* */
+.contact-section {
+    background-color: #ededed;
+    width: 100%;
+    padding: 40px 0;
+}
+
+.div-contact {
+    width: 96%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.log-contact-last {
+    width: 500px;
+    text-align: left;
+}
+
+.log-contact-last img:first-child {
+    margin-left: -50px;
+    height: 90px;
+    width: 300px;
+}
+
+.log-contact-last p {
+    margin-top: 30px;
+}
+
+.log-contact-last img {
+    margin-top: 10px;
+    margin-left: 50px;
+    width: 25px;
+    height: 25px;
+}
+
+.information-div {
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 60%;
+    flex-wrap: wrap;
+}
+
+.information-ul p {
+    font-weight: bold;
+    
+    margin-bottom: 15px;
+}
+
+.information-ul a {
+    display: block;
+    margin-bottom: 10px;
+    color: #000;
+    text-decoration: none;
+}
+
+.information-ul a:hover {
+    text-decoration: underline;
+    color: red;
+}
+
+.information-div ul {
+    flex-basis: 30%;
+    margin-right: 20px;
+}
+
+.information-div ul p {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.information-div ul a {
+    display: block;
+    margin-bottom: 8px;
+    color: #000;
+    text-decoration: none;
+}
+
+.information-div ul a:hover {
+    text-decoration: underline;
+}
+
+
+
+
