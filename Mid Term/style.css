@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+.nav-bar{
+    background-color: black;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: center;
+    align-content: center;
+}
+
+.Logo{
+    width:40%;
+    margin-left: 40px;
+    font-size: 30px;
+}
+
+.about-div{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 50px;
+   
+}
+
+.home-div-1{
+    background-color: blue;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 25px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+#h2{
+    font-size: 20px;
+}
+
+.outer-div{
+    color: white;
+    background-image: url('1.jpg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-color: rgb(178, 178, 228);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-div{
+    width: 30%;
+    height: 100vh;
+    padding-top: 50px;
+    padding-left: 50px;
+}
+
+.pic-div img{
+    border-radius: 50%;
+    width: 60%;
+    height: 70%;
+    margin-left: 30px;
+}
+
+.name-div{
+
+    margin-top: 20px;
+}
+
+#h1{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+#h3{
+    margin-top: 10px;
+    font-weight: bold;
+    margin-left: 40px;
+}
+
+/* Right div */
+
+
+.right-div{
+    width: 60%;
+    height: 50vh;
+    padding-left: 100px;
+}
+
+.welcome-div{
+    padding-top: 50px;
+}
+
+#welcome-h{
+    font-weight: bolder;
+    font-size: 50px;
+}
+
+.desc{
+    width: 80%;
+    font-size: 20px;
+    padding-top: 20px;
+}
+
+
+#btn-1{
+    margin-top: 10px;
+    padding: 15px;
+    background-color: black;
+    border-radius: 25px;
+    color: white;
+    font-weight: bold;
+    border: 1px solid black;
+}

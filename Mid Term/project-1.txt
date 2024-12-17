@@ -1,0 +1,29 @@
+Projects
+
+Project 1: 
+C++ Programming
+Developed multiple C++ applications that demonstrate deep understanding of object-oriented programming, data structures, and algorithms. These projects include practical solutions for real-world scenarios such as inventory management, sorting algorithms, and file handling, ensuring optimal performance and code efficiency.
+
+Technologies: 
+C++, OOP, STL
+Key Features: 
+Memory management, file I/O, efficient data handling
+
+
+Project 2: 
+School Management System
+Created a comprehensive School Management System using Java and the Javax Framework. The system provides an intuitive interface for managing student data, class scheduling, and administrative tasks. Designed with an emphasis on object-oriented programming (OOP) principles, it supports features like student registration, attendance tracking, and report generation.
+
+Technologies: 
+Java, OOP, Javax Framework
+Key Features:
+MVC architecture, database integration, GUI with Java Swing
+
+Project 3: 
+Uniworth Website
+Revamped the Uniworth website, transitioning it from a basic HTML/CSS site to a fully responsive and dynamic web application using Bootstrap. Focused on delivering a clean, modern design that is both mobile-friendly and highly responsive, ensuring an optimal user experience across all devices.
+
+Technologies: 
+HTML5, CSS3, JavaScript, Bootstrap
+Key Features: 
+Mobile-first design, responsive layouts, improved user navigation
