@@ -74,8 +74,8 @@ router.post("/login", async (req, res) => {
     // Set the token in cookies
     res.cookie("token", token, {
       httpOnly: true,
-      secure: process.env.NODE_ENV === "production", // Enable in production
-      sameSite: "strict", // Prevent CSRF attacks
+      secure: process.env.NODE_ENV === "production", 
+      sameSite: "strict", 
     });
 
     if (user.role === "admin") {
@@ -83,7 +83,6 @@ router.post("/login", async (req, res) => {
     }
 
     const categories = await categoryModel.find(); 
-    // res.render("MainPage/bootstrap", { layout: false, categories });
     res.redirect("/");
 
 });

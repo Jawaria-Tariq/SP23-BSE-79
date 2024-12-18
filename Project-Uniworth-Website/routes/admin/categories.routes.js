@@ -36,11 +36,6 @@ router.get("/Read/:page", adminMiddleware,async (req, res) => {
     
 });
 
-
-
-
-
-
 //ADD
 router.post("/create", adminMiddleware,upload.single('image'), async (req, res) => {
     const { name ,description } = req.body;

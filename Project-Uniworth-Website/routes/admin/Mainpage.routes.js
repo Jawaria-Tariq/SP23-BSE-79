@@ -18,40 +18,35 @@ router.get('/mainpage/:categoryId', async (req, res) => {
         const { categoryId } = req.params;
         const { search, sort, filter } = req.query;
 
-        // Build the query object
         const query = { category: categoryId };
 
-        // Add search functionality
         if (search) {
-            query.name = { $regex: search, $options: 'i' }; // Case-insensitive search
+            query.name = { $regex: search, $options: 'i' };
         }
 
-        // Check for the filter value and update query accordingly
         if (filter) {
-            // Handle price range filters
+
             if (filter.startsWith('price')) {
                 const priceRange = filter.split('_')[1];
                 const [minPrice, maxPrice] = priceRange.split('-');
                 query.price = {};
 
                 if (minPrice) query.price.$gte = Number(minPrice);
-                if (maxPrice === '+') query.price.$gte = 50000; // For Rs 50000 and above
+                if (maxPrice === '+') query.price.$gte = 50000; 
                 else if (maxPrice) query.price.$lte = Number(maxPrice);
             }
 
-            // Handle color filters
             if (filter.startsWith('colour')) {
                 const colour = filter.split('_')[1];
                 query.colour = colour;
             }
         }
 
-        // Fetch products from the database
+
         let products = await productModel.find(query);
 
-        // Add sorting functionality
         if (sort) {
-            const sortOption = sort === 'priceAsc' ? { price: 1 } : { price: -1 }; // Sort by price
+            const sortOption = sort === 'priceAsc' ? { price: 1 } : { price: -1 }; 
             products = await productModel.find(query).sort(sortOption);
         }
 

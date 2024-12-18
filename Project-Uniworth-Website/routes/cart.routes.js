@@ -66,41 +66,35 @@ router.post('/cart/update', isAuthenticated, async (req, res) => {
   const { productId, quantity } = req.body;
   const userId = req.user._id;
 
-  // Find the user's cart
   let cart = await Cart.findOne({ user: userId });
   if (!cart) {
       return res.status(404).send('Cart not found');
   }
 
-  // Find the item in the cart
   const existingItem = cart.items.find(item => item.product.toString() === productId);
   if (existingItem) {
-      // Update quantity
+
       existingItem.quantity = quantity;
       await cart.save();
   }
 
-  // Redirect to the cart page after updating the quantity
   res.redirect('/add-to-cart/cart');
 });
 
 // Route to remove an item from the cart
 router.post('/cart/remove', isAuthenticated, async (req, res) => {
-  const { productId } = req.body;
-  const userId = req.user._id;
+    const { productId } = req.body;
+    const userId = req.user._id;
 
-  // Find the user's cart
-  let cart = await Cart.findOne({ user: userId });
-  if (!cart) {
-      return res.status(404).send('Cart not found');
-  }
+    let cart = await Cart.findOne({ user: userId });
+    if (!cart) {
+        return res.status(404).send('Cart not found');
+    }
 
-  // Remove the item from the cart
-  cart.items = cart.items.filter(item => item.product.toString() !== productId);
-  await cart.save();
+    cart.items = cart.items.filter(item => item.product.toString() !== productId);
+    await cart.save();
 
-  // Redirect to the cart page after removal
-  res.redirect('/add-to-cart/cart');
+    res.redirect('/add-to-cart/cart');
 });
 
 module.exports = router;
