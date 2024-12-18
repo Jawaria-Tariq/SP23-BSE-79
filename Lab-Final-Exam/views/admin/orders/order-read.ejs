@@ -8,8 +8,8 @@
           <th scope="col">Customer Name</th>
           <th scope="col">Total Bill</th>
           <th scope="col">Payment Method</th>
-          <th scope="col">Order Status</th>
-          <th scope="col">Actions</th>
+          <th scope="col">Delivery address</th>
+          <th scope="col">Order Date and Time</th>
         </tr>
       </thead>
       <tbody>
@@ -19,12 +19,8 @@
             <td><%= order.user.username %></td>
             <td>Rs. <%= order.totalBill %></td>
             <td><%= order.paymentMethod === 'cash_on_delivery' ? 'Cash on Delivery' : 'Online Payment' %></td>
-            <td><%= order.status %></td>
-            <td>
-              <!-- Link to view order details -->
-              <a href="/admin/order/<%= order._id %>" class="btn btn-info btn-sm">View</a>
-              <!-- Option to update order status -->
-            </td>
+            <td><%= order.deliveryDetails.address %></td>
+            <td><%= new Date(order.createdAt).toLocaleString() %></td>
           </tr>
         <% }) %>
       </tbody>

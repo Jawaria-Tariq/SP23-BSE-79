@@ -41,7 +41,7 @@ app.use("/admin", adminRoutes);
 //Database Connection
 const connectdb = require("./db");
 
-const Port = 1000;
+const Port = 7000;
 
 const start =async() =>{
     await connectdb();
