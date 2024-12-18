@@ -10,6 +10,7 @@
           <th scope="col">Payment Method</th>
           <th scope="col">Delivery address</th>
           <th scope="col">Order Date and Time</th>
+          <th scope="col">Order Status</th>
         </tr>
       </thead>
       <tbody>
@@ -21,6 +22,7 @@
             <td><%= order.paymentMethod === 'cash_on_delivery' ? 'Cash on Delivery' : 'Online Payment' %></td>
             <td><%= order.deliveryDetails.address %></td>
             <td><%= new Date(order.createdAt).toLocaleString() %></td>
+            <td><%= order.status%></td>
           </tr>
         <% }) %>
       </tbody>
